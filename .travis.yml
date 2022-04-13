@@ -2,6 +2,8 @@ language: python
 python:
   - 3.6
 
+dist: focal
+
 # Update pip to the latest version
 before_install:
   - python --version
