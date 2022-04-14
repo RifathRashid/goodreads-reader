@@ -1,4 +1,4 @@
-# Goodreads Readeer
+# Goodreads Reader
 A smalls scraper for getting Goodreads data
 
 ### Installation
