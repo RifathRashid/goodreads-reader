@@ -1,5 +1,5 @@
 import requests
-from bs4 import BeautifulSoup
+#from bs4 import BeautifulSoup
 
 GOODREADS_BASE_URL = "https://www.goodreads.com"
 
@@ -23,7 +23,9 @@ class Reader:
     def go_through_pages(self, page_limit):
         for i in range(1, page_limit + 1):
             URL = GOODREADS_BASE_URL + "/review/list/93917322?ref=nav_mybooks&view=covers&page=" + str(i)
-
+            print("hello")
+            '''
+            
             page = requests.get(URL)
 
             soup = BeautifulSoup(page.content, 'html.parser')
@@ -32,6 +34,7 @@ class Reader:
             self.get_all_books(books_body)
             if len(books_body.contents) == 0:
                 return
+            '''
 
 
 
