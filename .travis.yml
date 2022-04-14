@@ -1,7 +1,7 @@
 language: python
 
 python:
-  - 3.6
+  - 3.7
 
 dist: xenial
 
@@ -11,7 +11,7 @@ before_install:
   - pip install -U pip
 
 install:
-  - pip3 install -r requirements.txt
+  - pip install -r requirements.txt
 
 script:
   - python -m unittest tests/reader_tests.py
