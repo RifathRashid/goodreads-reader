@@ -1,1 +1,1 @@
-from reader.reader import Reader
+import reader
