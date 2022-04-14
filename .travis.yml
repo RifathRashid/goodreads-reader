@@ -11,7 +11,7 @@ before_install:
   - pip install -U pip
 
 install:
-  - pip install -r requirements.txt
+  - pip3 install -r requirements.txt
 
 script:
   - python -m unittest tests/reader_tests.py
